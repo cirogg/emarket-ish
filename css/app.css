@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech|Share+Tech+Mono');
+
+@import "normalize.css";
+@import "bootstrap-grid.min.css";
+
+*{
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+body,header{
+  font-family: 'Share Tech Mono', monospace;
+  /* text-align: center; */
+}
+
+a{
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul,ol{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img{
+  width: 100%;
+}
+
+.main-container{
+  max-width: 1200px;
+  margin: auto;
+}
+
+.main-header{
+  text-align: center;
+  margin: 100px 0px;
+}
+
+.main-header h1{
+  font-size: 'Share Tech Mono', monospace;
+}
+
+.item-navigation-bar{
+  display: inline-block;
+  border: 1px lime dashed;
+  /* padding: 10px 50px; */
+}
+
+.item-navigation-bar:hover{
+  font-weight: bold;
+  font-size: 1.1em;
+
+}
+
+.navigation-ul{
+  display: flex;
+  justify-content: space-between;
+  border: 2px yellow solid;
+  width: 100%;
+}
+
+.navigation-bar{
+  border: 1px solid orange;
+  padding: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.oferta1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid pink;
+  /* background-image: url("../img/rojo-pastel.jpg"); */
+  background-color: #ff6961;
+  height: 350px;
+  color: white;
+}
+
+.oferta1 h2{
+  font-size: 3em;
+}
+
+.oferta1 h3{
+  font-size: 2em;
+}
+
+.oferta2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid pink;
+  /* background-image: url("../img/rojo-pastel.jpg"); */
+  background-color: #77dd77;
+  height: 500px;
+  color: white;
+  background-image: url('../img/sales-img.jpg');
+}
+
+.oferta2 h2{
+  font-size: 5em;
+  margin: 0px;
+}
+
+.oferta2 h3{
+  font-size: 4em;
+  margin: 0px;
+}
+
+.button-oferta{
+  border-radius: 30px;
+  padding: 10px 30px;
+  /* box-shadow: none;
+  background: none; */
+  border: none;
+  color: #ff6961
+}
+
+.articulo{
+  max-width: 600px;
+}
+
+.section-articulos{
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1200px; */
+
+}
+
+@media (max-width:767px) {
+  .section-articulos{
+    flex-direction: column;
+    justify-content: none;
+  }
+}
